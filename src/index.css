@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96.5%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 96.5%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 96.5%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    /* Custom font sizes */
+    --font-size-3xl: 1.875rem; /* 30px */
+    --font-size-xl: 1.25rem;   /* 20px */
+    --font-size-small: 0.875rem; /* 14px */
+    
+    /* Font weights */
+    --font-weight-bold: 600;
+    --font-weight-medium: 500;
+    
+    /* Text colors */
+    --text-default: 0 0% 0%;      /* #000000 */
+    --text-muted: 0 0% 46.3%;     /* #767676 */
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans overflow-x-hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Mobile-first responsive classes */
+@layer utilities {
+  /* Removed unused .main-content class */
+}
+
+/* Common typography classes */
+.text-heading-1 {
+  @apply text-3xl font-semibold text-black;
+}
+
+.text-body {
+  @apply text-sm text-[#767676];
+}
+
+.text-body-medium {
+  @apply text-sm font-medium text-[#767676];
+}
+
+/* Icon styling */
+.default-icon {
+  @apply text-[#89A8B2] w-4 h-4;
+}
+.default-icon-color {
+  @apply text-[#89A8B2];
+}
