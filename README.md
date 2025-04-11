@@ -26,8 +26,8 @@ Mostly intended for quick local prototyping of LLM pipelines.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/robbertmanders/simple_chat_ui.git
-    cd simple_chat_ui
+    git clone https://github.com/robbertmanders/simple-chat-ui.git
+    cd simple-chat-ui
     ```
 2.  **Install dependencies:**
     ```bash
